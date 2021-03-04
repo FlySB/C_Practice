@@ -36,11 +36,47 @@ void quickSort(int *array, int low, int high){
     }
 }
 
+//简单插入排序
+void insertSort(int *array, int n){
+    int temp = 0;
+    int i,j;
+    for(i = 1; i<n; i++){
+        if(array[i] < array[i-1]){
+            temp = array[i];
+            for(j = i-1; temp<array[j]; j--){
+                array[j+1] = array[j];
+            }
+            array[j+1] = temp;
+        }
+    }
+}
+
+// 简单选择排序
+
+void selectSort(int *array, int n){
+    int min,temp;
+    for(int i=0; i<n-1; i++){
+        min = i;
+        for(int j=i+1; j<n; j++){
+            if (array[j] < array[min])
+                min = j;
+        }
+        printf("%d",min);
+        if (min!=i){
+            temp = array[i];
+            array[i] = array[min];
+            array[min] = temp;
+        }
+    }
+}
+
 int main() {
     int arr[] = { 10,6,5,2,3,8,7,4,9,1 };
     int n = sizeof(arr) / sizeof(int);
 //    bubbleSort(arr, n);
-    quickSort(arr,0,n);
+//    quickSort(arr,0,n);
+//    insertSort(arr,n);
+    selectSort(arr, n);
     printf("排序后的数组为：\n");
     for (int j = 0; j<n; j++)
         printf("%d ", arr[j]);
