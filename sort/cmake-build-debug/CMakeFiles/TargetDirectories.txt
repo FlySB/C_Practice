@@ -1,0 +1,3 @@
+/Users/gongxing/Desktop/CodeLibrary/C_Practice/sort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/gongxing/Desktop/CodeLibrary/C_Practice/sort/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/gongxing/Desktop/CodeLibrary/C_Practice/sort/cmake-build-debug/CMakeFiles/sort.dir
